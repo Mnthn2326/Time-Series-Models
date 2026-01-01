@@ -1,54 +1,44 @@
-\# Water Reservoir Storage Forecasting – Time Series Models
+\# Water Reservoir Storage Forecasting – Time Series Learning Project
 
 
 
-This repository contains an \*\*academic learning project\*\* focused on understanding how \*\*time series forecasting models\*\* are built, trained, and evaluated using real-world data. The project explores multiple statistical, machine learning, and deep learning approaches for predicting daily water reservoir storage levels.
+This repository contains an academic learning project created to understand how time series forecasting models are built, trained, and evaluated using real-world data. The project focuses on hands-on experimentation with different forecasting techniques rather than achieving production-level performance.
 
 
 
-The primary goal of this work is \*\*conceptual clarity and hands-on implementation\*\*, rather than claiming production-grade performance or deployment readiness.
+\## Objective
 
 
 
-\## Project Motivation
+The main objective of this project is to:
 
 
 
-Time series forecasting behaves very differently from traditional supervised learning. This project was created to:
+\* Understand the structure and behavior of time series data
+
+\* Learn how classical, machine learning, and deep learning models handle temporal patterns
+
+\* Implement and compare multiple forecasting approaches on the same dataset
 
 
 
-\* Understand how temporal data is structured and processed
-
-\* Learn how different forecasting models interpret time-dependent patterns
-
-\* Compare classical, ML, and deep learning approaches on the same dataset
-
-\* Gain practical experience with model evaluation and error analysis
+\## Models Implemented
 
 
 
-\## Models Explored
+\* SARIMAX
+
+\* Prophet
+
+\* XGBoost
+
+\* LSTM
+
+\* iTransformer
 
 
 
-The following models were implemented to study their behavior and limitations:
-
-
-
-\* \*\*SARIMAX\*\* – Classical statistical time series model
-
-\* \*\*Prophet\*\* – Decomposition-based forecasting approach
-
-\* \*\*XGBoost\*\* – Tree-based regression with engineered temporal features
-
-\* \*\*LSTM\*\* – Recurrent neural network for sequential data
-
-\* \*\*iTransformer\*\* – Transformer-based architecture for multivariate time series
-
-
-
-Each model was trained and evaluated independently to observe how it learns temporal and feature-level patterns.
+Each model is implemented independently to observe its assumptions, strengths, and limitations.
 
 
 
@@ -56,75 +46,73 @@ Each model was trained and evaluated independently to observe how it learns temp
 
 
 
-\* \*\*Hydrological Data\*\*: Daily reservoir storage values
-
-\* \*\*Meteorological Data\*\*: Temperature, wind speed, and precipitation
-
-\* Data sources include publicly available datasets (Kaggle and NASA POWER)
+\* \*\*Hydrological Data\*\*: Chennai Water Reservoir dataset obtained from Kaggle
 
 
 
-The datasets were merged by date, cleaned, and converted into a continuous daily time series suitable for forecasting experiments.
+&nbsp; \* Source: \[https://www.kaggle.com/datasets/pavanreddy6/chennai-water-reservoirs](https://www.kaggle.com/datasets/pavanreddy6/chennai-water-reservoirs)
 
 
 
-\## Methodology (Learning-Oriented)
+\* \*\*Meteorological Data\*\*: Weather variables collected from NASA POWER Data Access Viewer (DAV)
 
 
 
-1\. Understanding the raw time series structure
-
-2\. Handling missing values and date alignment
-
-3\. Feature creation (lags, rolling statistics)
-
-4\. Chronological train–test split
-
-5\. Training different forecasting models
-
-6\. Comparing predictions using standard error metrics
+&nbsp; \* Source: \[https://power.larc.nasa.gov/data-access-viewer/](https://power.larc.nasa.gov/data-access-viewer/)
 
 
 
-This workflow was followed mainly to understand \*\*why models behave differently\*\*, not to optimize for maximum accuracy.
+Publicly available datasets were used strictly for learning and experimentation. The data was cleaned, merged by date, and converted into a continuous daily time series suitable for time series forecasting experiments.
 
 
 
-\## Tools and Libraries Used
+\## Methodology
 
 
 
-\* \*\*Language\*\*: Python
+\* Time series preprocessing and exploratory analysis
 
-\* \*\*Libraries\*\*:
+\* Feature engineering using lagged values and rolling statistics
 
+\* Chronological train–test split
 
-
-&nbsp; \* pandas, numpy
-
-&nbsp; \* scikit-learn
-
-&nbsp; \* statsmodels
-
-&nbsp; \* prophet
-
-&nbsp; \* xgboost
-
-&nbsp; \* tensorflow/keras
+\* Model training and evaluation using standard error metrics
 
 
 
-\## Project Nature
+The emphasis is on understanding how models work, not on optimizing results.
+
+
+
+\## Tools Used
+
+
+
+\* Python
+
+\* pandas, numpy
+
+\* scikit-learn
+
+\* statsmodels
+
+\* prophet
+
+\* xgboost
+
+\* tensorflow / pytorch
+
+
+
+\## Project Type
 
 
 
 \* Academic / self-learning project
 
-\* Not intended for production or operational use
+\* Experimental and educational in nature
 
-\* Focused on experimentation and understanding
-
-\* Built to strengthen fundamentals of time series modeling
+\* Not intended for production use
 
 
 
@@ -132,7 +120,7 @@ This workflow was followed mainly to understand \*\*why models behave differentl
 
 
 
-This repository is shared for \*\*educational purposes only\*\*.
+For educational use only.
 
 
 
